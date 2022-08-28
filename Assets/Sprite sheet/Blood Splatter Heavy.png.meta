@@ -93,7 +93,7 @@ TextureImporter:
       213: 6598185053440741201
     second: Blood Splatter Heavy_29
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,9 +110,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -121,9 +124,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -144,9 +147,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -234,6 +243,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -866,9 +887,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Blood Splatter Heavy_0: 5033783982615689998
+      Blood Splatter Heavy_26: 1125933220624647465
+      Blood Splatter Heavy_27: 1224047423468095363
+      Blood Splatter Heavy_7: -3432073918141438886
+      Blood Splatter Heavy_18: 5450058051842268046
+      Blood Splatter Heavy_1: 4529753584630987540
+      Blood Splatter Heavy_14: 5433677692131093508
+      Blood Splatter Heavy_23: 5488928163868725982
+      Blood Splatter Heavy_15: 1689323560731809830
+      Blood Splatter Heavy_11: 6568170564746825872
+      Blood Splatter Heavy_3: -4059725873329904345
+      Blood Splatter Heavy_24: 1898488191355356841
+      Blood Splatter Heavy_25: 4744958812560062755
+      Blood Splatter Heavy_8: -3538727740713131451
+      Blood Splatter Heavy_19: 5719460066185039151
+      Blood Splatter Heavy_12: -4957770294817189231
+      Blood Splatter Heavy_9: 4293398262043195420
+      Blood Splatter Heavy_21: 1296062139315165305
+      Blood Splatter Heavy_17: -8406656826948668196
+      Blood Splatter Heavy_6: -4359700586755766369
+      Blood Splatter Heavy_4: 8214768433257056409
+      Blood Splatter Heavy_5: 7302809198250921232
+      Blood Splatter Heavy_13: -7052638311059948257
+      Blood Splatter Heavy_28: 7121237315208166131
+      Blood Splatter Heavy_20: -2171590182785502701
+      Blood Splatter Heavy_2: 5967625202614756660
+      Blood Splatter Heavy_10: -1795843577117274543
+      Blood Splatter Heavy_16: 6747696991748513473
+      Blood Splatter Heavy_22: 2287759220168292619
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

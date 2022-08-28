@@ -243,7 +243,7 @@ TextureImporter:
       213: 6854164740678879442
     second: transparent_terrorists_79
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -260,9 +260,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -272,8 +275,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -294,9 +297,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -312,6 +321,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1175,9 +1208,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      transparent_terrorists_22: 6281089697944751740
+      transparent_terrorists_39: -1697768411577227396
+      transparent_terrorists_1: 1821277801089540445
+      transparent_terrorists_27: 4998393480991896606
+      transparent_terrorists_37: 3919741819370728913
+      transparent_terrorists_29: 5304918569505753798
+      transparent_terrorists_33: -908673174997075318
+      transparent_terrorists_21: -3375363675387817279
+      transparent_terrorists_4: -5403327372706019106
+      transparent_terrorists_7: 876605337270587641
+      transparent_terrorists_0: 7110804474469335186
+      transparent_terrorists_5: -4138268301387629100
+      transparent_terrorists_25: -1309789821799541983
+      transparent_terrorists_18: 8157577612227474307
+      transparent_terrorists_19: 6231511558994065771
+      transparent_terrorists_23: -5214033318591412821
+      transparent_terrorists_8: -7423286921901358625
+      transparent_terrorists_20: 3617913736582733871
+      transparent_terrorists_14: -3058685088929814838
+      transparent_terrorists_10: -6800148754613885380
+      transparent_terrorists_2: 2000938274019729329
+      transparent_terrorists_26: 1105495613686462381
+      transparent_terrorists_28: 9112512371748642596
+      transparent_terrorists_35: 1349046528790865707
+      transparent_terrorists_13: 5459232034811533686
+      transparent_terrorists_6: 6435906695843731001
+      transparent_terrorists_30: 2673580983287236797
+      transparent_terrorists_11: 3524264699131261970
+      transparent_terrorists_31: 6036394512521936271
+      transparent_terrorists_24: -2393278721269298421
+      transparent_terrorists_3: -6348850151919732638
+      transparent_terrorists_32: -4053047053449794756
+      transparent_terrorists_9: -7031830911168261458
+      transparent_terrorists_17: -8568560301296033793
+      transparent_terrorists_38: 747021445526750741
+      transparent_terrorists_36: -6099734662208951193
+      transparent_terrorists_12: -1094063596802322658
+      transparent_terrorists_34: 8948192241043690613
+      transparent_terrorists_15: 1456791035591355232
+      transparent_terrorists_16: -6879661305251722566
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

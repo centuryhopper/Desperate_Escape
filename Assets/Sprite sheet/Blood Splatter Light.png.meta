@@ -96,7 +96,7 @@ TextureImporter:
       213: 57129982286232140
     second: Blood Splatter Light_13
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -113,9 +113,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -124,9 +127,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -147,9 +150,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -247,6 +256,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -266,7 +287,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d47228f63a56447a0800000000000000
-      internalID: -6393873818334386355
+      internalID: -3694390503804525973
       vertices: []
       indices: 
       edges: []
@@ -287,7 +308,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e76bdfa1ea8582180800000000000000
-      internalID: -9139957938948032898
+      internalID: -6761159633947044825
       vertices: []
       indices: 
       edges: []
@@ -308,7 +329,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a7a489e86dc9eb390800000000000000
-      internalID: -7800625059229840774
+      internalID: 7294601527983836815
       vertices: []
       indices: 
       edges: []
@@ -329,7 +350,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 25e7f79747b621cc0800000000000000
-      internalID: -3741810192392683950
+      internalID: -8408871433652593781
       vertices: []
       indices: 
       edges: []
@@ -350,7 +371,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 601252e50abd92380800000000000000
-      internalID: -8995417298875113210
+      internalID: -4078368603848144260
       vertices: []
       indices: 
       edges: []
@@ -371,7 +392,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c22deb93e88888870800000000000000
-      internalID: 8685342025819542060
+      internalID: -6215288644845043033
       vertices: []
       indices: 
       edges: []
@@ -392,7 +413,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 36f76967f9f7a3db0800000000000000
-      internalID: -4811392929025851549
+      internalID: 58212425765745600
       vertices: []
       indices: 
       edges: []
@@ -413,7 +434,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c27c2b8f00daed270800000000000000
-      internalID: 8277243384837621548
+      internalID: -4356352354533982417
       vertices: []
       indices: 
       edges: []
@@ -434,7 +455,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6bd95b127ecef4f20800000000000000
-      internalID: 3409203920389905846
+      internalID: 2974996817637067684
       vertices: []
       indices: 
       edges: []
@@ -455,7 +476,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4d665abaa15840440800000000000000
-      internalID: 4901188644081329876
+      internalID: 6403501834236736177
       vertices: []
       indices: 
       edges: []
@@ -476,7 +497,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3b44d9363e960a720800000000000000
-      internalID: 2855398589102638259
+      internalID: 8435850333183237574
       vertices: []
       indices: 
       edges: []
@@ -497,7 +518,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fb4b00bfe76592e70800000000000000
-      internalID: 9090892426201052351
+      internalID: -1466413230083358330
       vertices: []
       indices: 
       edges: []
@@ -518,7 +539,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3486bf0f9a4352790800000000000000
-      internalID: -7555574895347013565
+      internalID: -8493376655184396688
       vertices: []
       indices: 
       edges: []
@@ -539,7 +560,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c4af13c8a67fac000800000000000000
-      internalID: 57129982286232140
+      internalID: 8966695243798510710
       vertices: []
       indices: 
       edges: []
@@ -554,9 +575,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Blood Splatter Light_3: -8408871433652593781
+      Blood Splatter Light_2: 7294601527983836815
+      Blood Splatter Light_6: 58212425765745600
+      Blood Splatter Light_5: -6215288644845043033
+      Blood Splatter Light_1: -6761159633947044825
+      Blood Splatter Light_4: -4078368603848144260
+      Blood Splatter Light_7: -4356352354533982417
+      Blood Splatter Light_0: -3694390503804525973
+      Blood Splatter Light_12: -8493376655184396688
+      Blood Splatter Light_11: -1466413230083358330
+      Blood Splatter Light_8: 2974996817637067684
+      Blood Splatter Light_9: 6403501834236736177
+      Blood Splatter Light_10: 8435850333183237574
+      Blood Splatter Light_13: 8966695243798510710
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

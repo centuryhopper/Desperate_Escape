@@ -12,8 +12,6 @@ public class MovementForShooting : MonoBehaviour
 
     Vector2 mousePosInWorldUnits;
 
-    public Transform TEST;
-
     public float Speed
     {
         get

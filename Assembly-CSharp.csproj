@@ -46,12 +46,14 @@
      <Compile Include="Assets/Scripts/SetCursor.cs" />
      <Compile Include="Assets/Scripts/CoroutineUtils.cs" />
      <Compile Include="Assets/Scripts/Player scripts/PlayerHealth.cs" />
+     <Compile Include="Assets/Scripts/ScriptableObjs/PatrolData.cs" />
      <Compile Include="Assets/Scripts/Player scripts/MovementForShooting.cs" />
      <Compile Include="Assets/Scripts/Levels/GameOver.cs" />
      <Compile Include="Assets/Scripts/Weapons/Weapon.cs" />
      <Compile Include="Assets/Scripts/Game Manager Scripts/LevelManager.cs" />
      <Compile Include="Assets/Scripts/Items/Item.cs" />
      <Compile Include="Assets/Scripts/Enemy scripts/AdvancedFollowPlayer.cs" />
+     <Compile Include="Assets/Scripts/extensions/MonoBehaviourExtensions.cs" />
      <Compile Include="Assets/Scripts/Particles.cs" />
      <Compile Include="Assets/Scripts/CameraControl.cs" />
      <Compile Include="Assets/Scripts/Unused scripts/Stealth.cs" />
@@ -75,12 +77,15 @@
      <Compile Include="Assets/Scripts/Enemy scripts/EnemyHealth.cs" />
      <Compile Include="Assets/Scripts/Unused scripts/Patrol.cs" />
      <Compile Include="Assets/Scripts/Unused scripts/DefaultInputs.cs" />
+     <Compile Include="Assets/Scripts/ScriptableObjs/StateData.cs" />
      <Compile Include="Assets/Scripts/Items/WeaponDrop.cs" />
      <Compile Include="Assets/Scripts/Game Manager Scripts/InputManager.cs" />
      <Compile Include="Assets/Scripts/Player scripts/PlayerStats.cs" />
+     <Compile Include="Assets/Scripts/Enemy scripts/EnemyInfo.cs" />
      <Compile Include="Assets/Scripts/Levels/MenuOptions.cs" />
      <Compile Include="Assets/Scripts/SenseData.cs" />
      <Compile Include="Assets/Scripts/IgnoreColl.cs" />
+     <Compile Include="Assets/Scripts/State machine scripts/EnemyState.cs" />
      <Compile Include="Assets/Scripts/Enemy scripts/EnemyBulletMotion.cs" />
      <Compile Include="Assets/Scripts/Enemy scripts/AdvancedPatrol.cs" />
      <Compile Include="Assets/Scripts/Items/HealthKit.cs" />
@@ -88,18 +93,15 @@
      <Compile Include="Assets/Scripts/Credits.cs" />
      <Compile Include="Assets/Scripts/Game Manager Scripts/UIManager.cs" />
      <Compile Include="Assets/Scripts/Unused scripts/Player.cs" />
+     <Compile Include="Assets/Scripts/Enemy scripts/EnemyPatrolLogic.cs" />
      <Compile Include="Assets/Scripts/State machine scripts/PatrolBehavior.cs" />
      <Compile Include="Assets/Example.cs" />
      <Compile Include="Assets/Scripts/Detector.cs" />
-     <Compile Include="Assets/Scripts/ScriptableObjs/StateData.cs" />
-     <Compile Include="Assets/Scripts/State machine scripts/EnemyState.cs" />
-     <Compile Include="Assets/Scripts/ScriptableObjs/PatrolData.cs" />
-     <Compile Include="Assets/Scripts/Enemy scripts/EnemyInfo.cs" />
-     <Compile Include="Assets/Scripts/Enemy scripts/EnemyPatrolLogic.cs" />
-     <Compile Include="Assets/Scripts/extensions/MonoBehaviourExtensions.cs" />
+     <Compile Include="Assets/Scripts/ScriptableObjs/NewPatrolData.cs" />
+     <Compile Include="Assets/Scripts/Enemy scripts/SimpleAIMovementTest.cs" />
+     <None Include="Assets/craftpix_tileset/License.txt" />
      <None Include="Assets/UrbanNightSky/Readme.txt" />
-     <None Include="Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/readme.txt" />
-     <None Include="Assets/craftpix-551899-free-zombie-tds-tilesets-buildings-and-furniture/License.txt" />
+     <None Include="Assets/craftpix_tileset/readme.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/home/leo_zhang/Unity/Hub/Editor/2022.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -718,23 +720,14 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
         <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -760,15 +753,30 @@
     <Reference Include="Unity.Services.Core">
         <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="NavMeshComponentsEditor">
+        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/NavMeshComponentsEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="NavMeshComponents">
+        <HintPath>/home/leo_zhang/Documents/GitHub/Desperate_Escape/Library/ScriptAssemblies/NavMeshComponents.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{02607b2e-0665-064f-cdc2-5a3f900c2f33}</Project>
-      <Name>AstarPathfindingProject</Name>
-    </ProjectReference>
     <ProjectReference Include="PackageToolsEditor.csproj">
       <Project>{cda02cef-1ed5-4abd-e0b3-007da347cb3c}</Project>
       <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{02607b2e-0665-064f-cdc2-5a3f900c2f33}</Project>
+      <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
       <Project>{2325481a-84ed-b5f4-7b4f-ae04bfb17e02}</Project>

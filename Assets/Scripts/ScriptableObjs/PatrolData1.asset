@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154b162eca57fd12fa0e8f47dce7c208, type: 3}
   m_Name: PatrolData1
   m_EditorClassIdentifier: 
-  speed: 14.18
+  speed: 1065.1
   setWaitTime: 2
+  tolerableDistToWaypt: 3
+  nextWayPointDist: 3
